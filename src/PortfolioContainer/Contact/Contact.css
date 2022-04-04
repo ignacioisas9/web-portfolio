@@ -1,0 +1,96 @@
+.c {
+  height: 60vh;
+  position: relative;
+}
+
+.c-title {
+  color: white;
+  font-size: 60px;
+  width: 80%;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  flex: 1;
+}
+
+.c-info-icon {
+  display: flex;
+  align-items: center;
+}
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-info-item {
+  color: white;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-desc {
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: var(--dark-orange);
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c {
+    height: 100%;
+  }
+  .c-wrapper {
+    flex-direction: column;
+  }
+  .c-info-item {
+    width: 100%;
+  }
+  .c-title {
+    font-size: 30px;
+  }
+  input {
+    width: 100%;
+  }
+  button {
+    justify-content: center;
+  }
+}
